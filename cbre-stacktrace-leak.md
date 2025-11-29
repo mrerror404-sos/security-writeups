@@ -12,5 +12,30 @@ This exposes sensitive implementation details that can be used for reconnaissanc
 ---
 
 ## 🔍 Technical Details
-Affected endpoint:
+Affected endpoint:https://api.aggregate.cbre.com
+
+
+was returning **full .NET exception data**, including:
+
+- Internal class names  
+- Middleware identifiers  
+- StackTraceString  
+- Source file references  
+- Detailed plugin names  
+
+This is **sensitive information disclosure** and significantly increases attack surface.
+
+---
+
+## 🔍 Technical Details
+
+### Example response (redacted):
+```json
+{
+  "ClassName": "System.Exception",
+  "Message": "Unauthorized",
+  "StackTraceString": "Plugin.AzureSSO.Middleware.AzureSSOMiddleware.Invoke...",
+  "Source": "Plugin.Azure.SSO"
+}
+
 
