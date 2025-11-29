@@ -54,21 +54,22 @@ Risk: Unauthorized device authorization / session spoofing.
 
 ---
 
-### 🔵 **CBRE — Verbose API Stack Trace Leakage (N/A)**
+### 🔵 CBRE — Verbose API Stack Trace Leakage (N/A)
 Unauthenticated API returning .NET SSO stack trace with internal middleware names.  
-➡️ Writeup coming soon…
+➡️ **[Read Writeup](cbre-stacktrace-leak.md)**
 
 ---
 
-### 🟢 **OneZero Bank — Clickjacking / Missing X-Frame-Options (N/A)**
-Bank website allowed full framing → clickjacking risk.  
-➡️ Writeup coming soon…
+### 🟢 OneZero Bank — Clickjacking / Missing X-Frame-Options (N/A)
+Bank website allowed full framing → clickjacking risk on public pages.  
+➡️ **[Read Writeup](bank-clickjacking.md)**
 
 ---
 
-### 🟡 **Truzta QA — Multi-Service API Keys in JS**
-Found Twilio, Heroku, Google Captcha, Square tokens in frontend JS.  
-➡️ Writeup coming soon…
+### 🟡 Truzta QA — Multi-Service API Keys in JS
+Found Twilio, Heroku, Google Captcha, Square tokens in frontend JS bundles.  
+➡️ **[Read Writeup](truzta-multi-key-exposure.md)**
+
 
 ---
 
